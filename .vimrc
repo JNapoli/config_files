@@ -1,9 +1,13 @@
-:let fortran_free_source=1
-:let fortran_have_tabs=1
+call pathogen#infect()
 
-"" Colorscheme 
+let fortran_free_source=1
+let fortran_have_tabs=1
+
 syntax on
-let g:solarized_termcolors=256
+filetype plugin indent on
+syntax enable 
+
+"" Solarized stuff
 let g:solarized_termtrans=1
 set background=dark
 colorscheme solarized
@@ -19,9 +23,6 @@ set tabstop=4
 set shiftwidth=4     
 set expandtab       
 
-"" Enable <t_co> vim colors before setting scheme.
-""set t_co=256        
-
 "" Ignore case in search patterns.
 set ignorecase 
 
@@ -33,3 +34,5 @@ set textwidth=72
 "" separated by a comma.
 set ruler          
 
+"" Highlight current line
+set cursorline
